@@ -34,10 +34,13 @@ function readArticlesTemplate(data, keywords){
             read_articles_html+="<th class='w-15-pct'>Created</th>";
             read_articles_html+="<th class='w-25-pct text-align-center'>Action</th>";
         read_articles_html+="</tr>";
- 
+
+        console.log(data)
+ console.log(data.details[0]);
     // loop through returned list of data
     $.each(data.details, function(key, val) {
- 
+
+    
         // creating new table row per record
         read_articles_html+="<tr>";
  

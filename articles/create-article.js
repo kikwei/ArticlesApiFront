@@ -32,7 +32,7 @@ $(document).on('click','.create-article-button',function(){
 	changePageTitle("Create an Article");
 });
 
-    // will run if create product form was submitted
+  // will run if create product form was submitted
 $(document).on('submit', '#create-article-form', function(){
     
 var form = $("#create-article-form");
@@ -40,7 +40,6 @@ var form = $("#create-article-form");
     // get form data
 var form_data=JSON.stringify(form.serializeObject());
 //console.log(form_data);
- console.log(JSON.parse(form_data));
 
 //submit form data to api
 $.ajax({
@@ -60,4 +59,6 @@ $.ajax({
  // $(this).preventDefault();
  return false;
 });
+
+
 });
